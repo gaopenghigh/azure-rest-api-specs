@@ -590,7 +590,7 @@ interface TrafficControllerInterface {
 
 @added(Versions.v2025_09_01_preview)
 @armResourceOperations
-interface PrivateEndpointConnectionInterface {
+interface PrivateEndpointConnectionsInterface {
   get is ArmResourceRead<PrivateEndpointConnection>;
   createOrUpdate is ArmResourceCreateOrReplaceAsync<
     PrivateEndpointConnection,
@@ -602,7 +602,7 @@ interface PrivateEndpointConnectionInterface {
 
 @added(Versions.v2025_09_01_preview)
 @armResourceOperations
-interface PrivateEndpointConnectionProxyInterface {
+interface PrivateEndpointConnectionProxiesInterface {
   get is ArmResourceRead<PrivateEndpointConnectionProxy>;
   createOrUpdate is ArmResourceCreateOrReplaceAsync<
     PrivateEndpointConnectionProxy,
@@ -626,7 +626,7 @@ interface PrivateEndpointConnectionProxyInterface {
 
 @added(Versions.v2025_09_01_preview)
 @armResourceOperations
-interface PrivateLinkResourceInterface {
+interface PrivateLinkResourcesInterface {
   get is ArmResourceRead<PrivateLinkResource>;
   listByTrafficController is ArmResourceListByParent<PrivateLinkResource>;
 }
