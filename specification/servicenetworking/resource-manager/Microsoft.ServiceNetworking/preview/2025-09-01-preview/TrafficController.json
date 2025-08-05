@@ -2545,13 +2545,16 @@
           "x-ms-client-flatten": true
         },
         "etag": {
-          "type": "string"
+          "type": "string",
+          "description": "Private Endpoint Connection Proxy Etag."
         },
         "location": {
-          "type": "string"
+          "type": "string",
+          "description": "Private Endpoint Connection Proxy Location."
         },
         "remotePrivateEndpoint": {
-          "$ref": "#/definitions/RemotePrivateEndpoint"
+          "$ref": "#/definitions/RemotePrivateEndpoint",
+          "description": "Represent remote private endpoint information for the private endpoint connection proxy."
         }
       },
       "required": [
@@ -2593,13 +2596,16 @@
       "description": "The type used for update operations of the PrivateEndpointConnectionProxy.",
       "properties": {
         "etag": {
-          "type": "string"
+          "type": "string",
+          "description": "Private Endpoint Connection Proxy Etag."
         },
         "location": {
-          "type": "string"
+          "type": "string",
+          "description": "Private Endpoint Connection Proxy Location."
         },
         "remotePrivateEndpoint": {
-          "$ref": "#/definitions/RemotePrivateEndpointUpdate"
+          "$ref": "#/definitions/RemotePrivateEndpointUpdate",
+          "description": "Represent remote private endpoint information for the private endpoint connection proxy."
         }
       }
     },

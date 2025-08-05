@@ -274,12 +274,24 @@ model PrivateEndpointConnectionProxy
     SegmentName = "privateEndpointConnectionProxies",
     NamePattern = "^[A-Za-z0-9]([A-Za-z0-9-_.]{0,62}[A-Za-z0-9])?$"
   >;
+
+  /** Private Endpoint Connection Proxy Etag. */
+  #suppress "@azure-tools/typespec-azure-resource-manager/arm-resource-invalid-envelope-property"
   etag?: string;
+
+  /** Private Endpoint Connection Proxy Location. */
+  #suppress "@azure-tools/typespec-azure-resource-manager/arm-resource-invalid-envelope-property"
   location?: string;
+
+  /** Represent remote private endpoint information for the private endpoint connection proxy. */
+  #suppress "@azure-tools/typespec-azure-resource-manager/arm-resource-invalid-envelope-property"
   remotePrivateEndpoint: RemotePrivateEndpoint;
 }
 
 /** Properties of the private endpoint connection proxy */
+#suppress "@azure-tools/typespec-azure-resource-manager/arm-resource-invalid-envelope-property"
+#suppress "@azure-tools/typespec-azure-resource-manager/no-empty-model"
+#suppress "@azure-tools/typespec-azure-resource-manager/arm-resource-provisioning-state"
 @added(Versions.v2025_09_01_preview)
 model PrivateEndpointConnectionProxyProperties {}
 
